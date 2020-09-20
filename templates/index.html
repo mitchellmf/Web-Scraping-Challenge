@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Mars App</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container">
+
+    <!-- Our columns function in rows. -->
+    <div class="row">
+
+      <!-- Columns have 12 areas of width to work with. -->
+
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+        <!-- This is column 1 of 3 -->
+      </div>
+
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+        <!-- This is column 2 of 3 -->
+      </div>
+
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+
+        <!-- This is column 3 of 3 -->
+      </div>
+
+      <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
+    </div>
+
+  </div>
+
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row">
+
+      <!-- First (and only column) -->
+      <div class="col-md-12">
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Bootstrap Demo</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Our rows function in containers (grid created). -->
+  <div class="container">
+
+    <!-- Our columns function in rows. -->
+    <div class="row">
+
+      <!-- Columns have 12 areas of width to work with. -->
+
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+        <!-- This is column 1 of 3 -->
+      </div>
+
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+        <!-- This is column 2 of 3 -->
+      </div>
+
+      <!-- One third of screen (4/12) -->
+      <div class="col-md-4">
+
+        <!-- This is column 3 of 3 -->
+      </div>
+
+      <!-- Columns float left, so all adjacent rows will appear next to each other (as long as not all space gets taken up) -->
+    </div>
+
+  </div>
+
+
+  <!-- Creates the Overall Grid -->
+  <div class="container">
+
+    <!-- First Row -->
+    <div class="row">
+
+      <!-- First (and only column) -->
+      <div class="col-md-12">
+        <h3> <a> Mars Facts </a> </h3>
+        <div> {{ mars.table | safe }} </div>
+        <hr size="20" color='black'> <br>
+      </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-12">
+        <br>
+        <h3> {{ mars.news_title[0] }} </h3>
+        <br> 
+      </div>
+      <br> 
+      <!-- Second of two columns -->
+      <div class="col-md-12">
+        <h5> {{ mars.news_parag[0] }} </h5>
+        <br>
+      </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="row">
+
+      <!-- First (and only column) -->
+      <div class="col-md-12">
+        <img src = "{{ mars.featured_image_url[0] }}" width="400px" length="250px" >
+        <hr size="20" color='black'> <br>
+      </div>
+    </div>
+
+    <!-- Fourth Row -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-6">
+        <br>
+        <h3> {{ mars.titles[0] }} </h3>
+        <br>  <br>
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-6">
+        <br>
+        <img src="{{ mars.links[0] }}" width="300px" length="300px" >
+        <br> <br>
+      </div>
+    </div> 
+    
+    <!-- Fourth Row -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-6">
+        <br>
+        <h3> {{ mars.titles[1] }} </h3>
+        <br>  <br>
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-6">
+        <br>
+        <img src="{{ mars.links[1] }}" width="300px" length="300px" >
+        <br> <br>
+      </div>
+    </div> 
+
+        <!-- Fourth Row -->
+        <div class="row">
+
+          <!-- First of two columns -->
+          <div class="col-md-6">
+            <br>
+            <h3> {{ mars.titles[2] }} </h3>
+            <br>  <br>
+          </div>
+    
+          <!-- Second of two columns -->
+          <div class="col-md-6">
+            <br>
+            <img src="{{ mars.links[2] }}" width="300px" length="300px" >
+            <br> <br>
+          </div>
+        </div> 
+
+            <!-- Fourth Row -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-6">
+        <br>
+        <h3> {{ mars.titles[3] }} </h3>
+        <br>  <br>
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-6">
+        <br>
+        <img src="{{ mars.links[3] }}" width="300px" length="300px" >
+        <br> <br>
+      </div>
+    </div> 
+
+    
+
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+
+
+</html>
